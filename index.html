@@ -13,10 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;200;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css"/>
-
+    <script type="module" src="script.js" defer></script>
     </head>
     <body>
-    <h1> My Grocery List ✏️ </h1>
+    <h1 class="title">My Grocery List ✏️ </h1>
     <form class="newGroceryForm">
         <input 
         id="newGrocery" 
@@ -28,10 +28,7 @@
         id="addBtn"
         type="submit">Add</button>
     </form>
-    <ul id="groceryList">
-        <li class="groceryItem">Milk</li>
-        <li class="groceryItem">Eggs</li>
-        <li class="groceryItem">Tortillas</li>
+    <ul id="groceryList"></ul>
     </ul>
     </body>
     </html>
