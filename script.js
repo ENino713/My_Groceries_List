@@ -1,4 +1,6 @@
-const groceries = []
+import { LocalDB } from 'https://cdn.skypack.dev/peadb'
+const db = new LocalDB('grocery-list-db') 
+const groceries = db.getAll ||  []
 
 const groceryList = document.getElementById('groceryList')
 const newGroceryinput = document.getElementById('newGrocery')
