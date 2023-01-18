@@ -1,4 +1,4 @@
-const groceries = ['Milk', 'Cookies', 'Orange Juice']
+const groceries = []
 
 const groceryList = document.getElementById('groceryList')
 const newGroceryinput = document.getElementById('newGrocery')
