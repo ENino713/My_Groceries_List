@@ -4,9 +4,9 @@ const groceryList = document.getElementById('groceryList')
 const newGroceryinput = document.getElementById('newGrocery')
 const addBtn = document.getElementById('addBtn') 
 
-const createGroceryElement = groceryName => {
+const createGroceryElement = grocery => {
   const groceryElement = document.createElement('li')
-    groceryElement.innerText = groceryList
+    groceryElement.innerText = grocery
     groceryElement.classList.add('groceryItem')
     return groceryElement
 } 
@@ -17,10 +17,10 @@ const addGrocery = newGrocery => {
 
 addBtn.addEventListener('click', e => {
     e.preventDefault()
-    const value  = newGroceryInput.value
+    const value  = newGroceryinput.value
     if (value) {
         addGrocery(value)
-        newGroceryInput.value = null
+        newGroceryinput.value = null
     }
 })
 
